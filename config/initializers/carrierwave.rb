@@ -8,5 +8,5 @@ CarrierWave.configure do |config|
     :s3_secret_access_key  => ENV['S3_SECRET_KEY'],
     :region                 => 'eu-north-1',
   }
-  config.fog_directory  = ENV['S3_Bucket']
+  config.fog_directory  = ENV['S3_BUCKET']
 end
