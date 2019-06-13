@@ -8,5 +8,6 @@ if Rails.env.production?
       :region                 => 'eu-north-1',
     }
     config.fog_directory     =  ENV['S3_BUCKET']
+    config.fog_provider = 'fog/aws'
   end
 end
